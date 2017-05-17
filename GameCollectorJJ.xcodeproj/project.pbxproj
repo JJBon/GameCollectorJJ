@@ -13,6 +13,7 @@
 		257FABF51ECA7EDA00359366 /* GameCollectorJJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 257FABF31ECA7EDA00359366 /* GameCollectorJJ.xcdatamodeld */; };
 		257FABF71ECA7EDA00359366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257FABF61ECA7EDA00359366 /* Assets.xcassets */; };
 		257FABFA1ECA7EDA00359366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257FABF81ECA7EDA00359366 /* LaunchScreen.storyboard */; };
+		257FAC021ECA8C4A00359366 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FAC011ECA8C4A00359366 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		257FABF61ECA7EDA00359366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257FABF91ECA7EDA00359366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		257FABFB1ECA7EDA00359366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		257FAC011ECA8C4A00359366 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				257FABF01ECA7EDA00359366 /* Main.storyboard */,
 				257FABF61ECA7EDA00359366 /* Assets.xcassets */,
 				257FABF81ECA7EDA00359366 /* LaunchScreen.storyboard */,
+				257FAC011ECA8C4A00359366 /* GameViewController.swift */,
 				257FABFB1ECA7EDA00359366 /* Info.plist */,
 				257FABF31ECA7EDA00359366 /* GameCollectorJJ.xcdatamodeld */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257FAC021ECA8C4A00359366 /* GameViewController.swift in Sources */,
 				257FABEF1ECA7EDA00359366 /* ViewController.swift in Sources */,
 				257FABED1ECA7EDA00359366 /* AppDelegate.swift in Sources */,
 				257FABF51ECA7EDA00359366 /* GameCollectorJJ.xcdatamodeld in Sources */,
