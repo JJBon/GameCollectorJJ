@@ -49,6 +49,22 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func addTapped(_ sender: Any) {
+        
+        
+        //core data
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let game = Game(context: context)
+        game.title = titleTextField.text
+
+        // asignar imagen como NSData, puede ser como jpeg o pngr
+        
+        game.image = UIImagePNGRepresentation(gameImageView.image!)! as NSData
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
+        
     }
     
    }
