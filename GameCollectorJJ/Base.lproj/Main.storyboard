@@ -42,7 +42,7 @@
                     <navigationItem key="navigationItem" id="GCi-LB-rga">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="N01-MI-8cX">
                             <connections>
-                                <segue destination="EEM-2j-Cco" kind="show" id="QzJ-6U-cO1"/>
+                                <segue destination="EEM-2j-Cco" kind="show" identifier="gameSegue" id="QzJ-6U-cO1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGd-kE-a2A">
-                                <rect key="frame" x="47.5" y="264" width="280" height="30"/>
+                                <rect key="frame" x="48" y="264" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -86,6 +86,13 @@
                                     <action selector="addTapped:" destination="EEM-2j-Cco" eventType="touchUpInside" id="wMb-O2-fkd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCr-OL-30c">
+                                <rect key="frame" x="165" y="352" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="EEM-2j-Cco" eventType="touchUpInside" id="JFi-gW-FAK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,6 +101,8 @@
                             <constraint firstItem="end-Lc-NjL" firstAttribute="centerX" secondItem="Hf6-74-7GJ" secondAttribute="centerX" id="EVR-op-BiV"/>
                             <constraint firstItem="cGd-kE-a2A" firstAttribute="top" secondItem="TcX-Ku-64c" secondAttribute="bottom" constant="30" id="LMA-fn-2uk"/>
                             <constraint firstItem="cGd-kE-a2A" firstAttribute="centerX" secondItem="Hf6-74-7GJ" secondAttribute="centerX" id="Zmb-Wl-QK7"/>
+                            <constraint firstItem="CCr-OL-30c" firstAttribute="centerX" secondItem="Hf6-74-7GJ" secondAttribute="centerX" id="coS-3s-mAF"/>
+                            <constraint firstItem="CCr-OL-30c" firstAttribute="top" secondItem="end-Lc-NjL" secondAttribute="bottom" constant="8" id="g0B-5b-8X7"/>
                             <constraint firstItem="TcX-Ku-64c" firstAttribute="top" secondItem="JJv-Sh-Ye5" secondAttribute="bottom" constant="20" id="pqD-FZ-zge"/>
                             <constraint firstItem="TcX-Ku-64c" firstAttribute="centerX" secondItem="Hf6-74-7GJ" secondAttribute="centerX" id="tQf-c9-Jo9"/>
                         </constraints>
@@ -113,6 +122,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="end-Lc-NjL" id="c6c-z0-jbG"/>
+                        <outlet property="deleteButton" destination="CCr-OL-30c" id="xKN-up-3ZU"/>
                         <outlet property="gameImageView" destination="TcX-Ku-64c" id="XJ0-MX-h4c"/>
                         <outlet property="titleTextField" destination="cGd-kE-a2A" id="3hc-Vg-5WG"/>
                     </connections>
